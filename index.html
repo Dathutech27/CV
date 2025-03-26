@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CV - Nguyễn Thành Đạt</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function switchLanguage(lang) {
+            document.querySelectorAll('.lang').forEach(el => {
+                el.style.display = el.classList.contains(lang) ? 'block' : 'none';
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="language-switch">
+        <button onclick="switchLanguage('vi')">Tiếng Việt</button>
+        <button onclick="switchLanguage('en')">English</button>
+    </div>
+    
+    <div class="cv-container lang vi">
+        <header>
+            <img src="avatar.jpg" alt="Ảnh đại diện" class="avatar">
+            <h1>Nguyễn Thành Đạt</h1>
+            <p class="job-title">Thực tập sinh phát triển phần mềm</p>
+        </header>
+        <section class="contact">
+            <h2>Liên hệ</h2>
+            <ul>
+                <li>📞 0356894178</li>
+                <li>📧 <a href="mailto:lucasthanhdatd@mail.com">lucasthanhdatd@mail.com</a></li>
+                <li>📍 Quận 10, TP.HCM</li>
+                <li>🌐 <a href="https://www.fb/thanhdat.com">www.fb/thanhdat.com</a></li>
+            </ul>
+        </section>
+        <section class="about">
+            <h2>Giới thiệu bản thân</h2>
+            <p>Mục tiêu ngắn hạn: 2023-2024 - Tích lũy kỹ năng lập trình web, ứng dụng .NET.</p>
+            <p>Mục tiêu dài hạn: Trở thành lập trình viên chuyên nghiệp.</p>
+        </section>
+        <section class="experience">
+            <h2>Kinh nghiệm</h2>
+            <div class="job">
+                <h3>Thư viện trực tuyến (2023-2024)</h3>
+                <p><strong>Công nghệ:</strong> HTML, CSS, JavaScript, ASP.NET Core, Entity Framework Core.</p>
+                <p>Giải quyết bài toán mượn trả sách online, giúp việc quản lý dữ liệu tốt hơn.</p>
+            </div>
+            <div class="job">
+                <h3>Hệ thống đặt lịch khám bệnh (2023-2024)</h3>
+                <p><strong>Công nghệ:</strong> ASP.NET Core, Entity Framework.</p>
+                <p>Hỗ trợ bệnh nhân đặt lịch khám, tra tình trạng quá tải.</p>
+            </div>
+        </section>
+    </div>
+    
+    <div class="cv-container lang en" style="display: none;">
+        <header>
+            <h1>Thanh Dat</h1>
+            <p>Software Developer</p>
+        </header>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Passionate software developer with experience in building web and mobile applications.</p>
+        </section>
+        <section class="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <h3>Software Developer Intern - Company XYZ</h3>
+                    <p>Worked on developing and maintaining web applications.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <h3>University of Technology</h3>
+                    <p>Bachelor's in Computer Science</p>
+                </li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>Email: thanhdat@example.com</p>
+            <p>GitHub: <a href="https://github.com/Datdat2704">Datdat2704</a></p>
+        </section>
+    </div>
+</body>
+</html>
